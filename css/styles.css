@@ -476,36 +476,6 @@ ul.bullet-list li::marker { color: var(--accent); }
 .milestone h3 { margin: 0 0 6px; font-size: 16px; }
 .milestone p { margin: 0; color: var(--ink-soft); font-size: 14px; }
 
-/* ---------- References table ---------- */
-
-.ref-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-.ref-filters button {
-  font-family: var(--font);
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 7px 14px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  color: var(--ink-soft);
-}
-.ref-filters button.active,
-.ref-filters button:hover { border-color: var(--blue); color: var(--blue); }
-
-.ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-
-.ref-card {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 20px;
-}
-
-.ref-card .ref-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; font-size: 12px; color: var(--ink-soft); margin-bottom: 10px; font-weight: 700; }
-.ref-card .ref-sector { color: var(--blue); }
-.ref-card p { margin: 0; font-size: 14px; color: var(--ink-soft); }
-
 /* ---------- Contact ---------- */
 
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
@@ -617,7 +587,6 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
   .card-grid-2 { grid-template-columns: 1fr; }
   .service-body { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .ref-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 1280px) {

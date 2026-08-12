@@ -33,20 +33,4 @@
       if (!item.contains(e.target)) item.classList.remove("open");
     });
   });
-
-  var filterButtons = document.querySelectorAll("[data-ref-filter]");
-  var refCards = document.querySelectorAll("[data-ref-sector]");
-  if (filterButtons.length && refCards.length) {
-    filterButtons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        filterButtons.forEach(function (b) { b.classList.remove("active"); });
-        btn.classList.add("active");
-        var filter = btn.getAttribute("data-ref-filter");
-        refCards.forEach(function (card) {
-          var match = filter === "all" || card.getAttribute("data-ref-sector") === filter;
-          card.style.display = match ? "" : "none";
-        });
-      });
-    });
-  }
 })();
