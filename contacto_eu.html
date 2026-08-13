@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://www.exdci-solutions.com/images/logo.png" />
 
 <link rel="icon" href="images/favicon.ico" />
-<link rel="stylesheet" href="css/styles.css?v=5fbbd3738f" />
+<link rel="stylesheet" href="css/styles.css?v=7ab1740226" />
 </head>
 <body id="top">
 
@@ -138,10 +138,31 @@
             <input type="text" id="phone" name="phone" />
           </div>
           <div>
+            <label>Intereseko arloak</label>
+            <details class="interest-select" id="interest-select" data-selected-label="hautatuta" data-placeholder="Hautatu arlo bat edo gehiago">
+              <summary>Hautatu arlo bat edo gehiago</summary>
+              <div class="interest-panel">
+                <p class="interest-group-label">PRODUKTUAK</p>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="RAS · Machine Access Box" /> RAS · Machine Access Box</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="IPL · Router Industriala" /> IPL · Router Industriala</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="XSLAN / XELAN · Ethernet Extender" /> XSLAN / XELAN · Ethernet Extender</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="SIG · VPN Zerbitzariak" /> SIG · VPN Zerbitzariak</label>
+                <p class="interest-group-label">SOLUZIOAK</p>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="Máquina Conectada (Konektatutako Makina)" /> Máquina Conectada (Konektatutako Makina)</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="BeSmartOverWire" /> BeSmartOverWire</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="ESLynk" /> ESLynk</label>
+                <p class="interest-group-label">ZERBITZUAK</p>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="EcoXpert Power Management" /> EcoXpert Power Management</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="Automatizazioa, Kontrola eta Komunikazioak" /> Automatizazioa, Kontrola eta Komunikazioak</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="Energia Kudeaketa Sistemak" /> Energia Kudeaketa Sistemak</label>
+              </div>
+            </details>
+          </div>
+          <div>
             <label for="message">Mezua</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Mezua bidali</button>
+          <button type="submit" class="btn btn-primary" disabled>Mezua bidali</button>
           <p class="form-note">Formulario hau bidaltzean, zure mezua zuzenean emailez iristen zaigu. Ez dugu zure daturik hirugarrenekin partekatzen.</p>
         </form>
       </div>
@@ -183,6 +204,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=5fbbd3738f"></script>
+<script src="js/main.js?v=7ab1740226"></script>
 </body>
 </html>

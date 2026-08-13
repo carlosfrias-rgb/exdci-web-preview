@@ -251,6 +251,9 @@ a:hover { color: var(--blue-light); }
 .btn-outline { background: transparent; border-color: var(--border); color: var(--ink); }
 .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
 
+.btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+.btn:disabled:hover { background: var(--green); transform: none; }
+
 /* ---------- Quote block ---------- */
 
 .quote-block {
@@ -516,6 +519,50 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
 .contact-form textarea { min-height: 130px; resize: vertical; }
 
 .form-note { font-size: 12px; color: var(--ink-soft); margin-top: -4px; }
+
+.interest-select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-alt);
+}
+
+.interest-select summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 14px;
+  padding: 11px 14px;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.interest-select summary::-webkit-details-marker { display: none; }
+.interest-select summary::after { content: "▾"; color: var(--ink-soft); margin-left: 8px; }
+.interest-select[open] summary::after { content: "▴"; }
+
+.interest-panel { padding: 4px 14px 14px; border-top: 1px solid var(--border); }
+
+.interest-group-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 12px 0 6px;
+}
+.interest-group-label:first-child { margin-top: 12px; }
+
+.interest-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 0;
+  cursor: pointer;
+}
+.interest-option input { width: auto; }
 
 /* ---------- Footer ---------- */
 

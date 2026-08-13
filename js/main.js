@@ -34,3 +34,27 @@
     });
   });
 })();
+
+(function () {
+  var interestBox = document.getElementById("interest-select");
+  var form = document.querySelector(".contact-form");
+  if (!interestBox || !form) return;
+
+  var submitBtn = form.querySelector('button[type="submit"]');
+  var summary = interestBox.querySelector("summary");
+  var placeholder = interestBox.getAttribute("data-placeholder");
+  var selectedLabel = interestBox.getAttribute("data-selected-label");
+  var checkboxes = interestBox.querySelectorAll('input[type="checkbox"]');
+
+  function updateInterestState() {
+    var checkedCount = interestBox.querySelectorAll('input[type="checkbox"]:checked').length;
+    submitBtn.disabled = checkedCount === 0;
+    summary.textContent = checkedCount === 0 ? placeholder : checkedCount + " " + selectedLabel;
+  }
+
+  checkboxes.forEach(function (cb) {
+    cb.addEventListener("change", updateInterestState);
+  });
+
+  updateInterestState();
+})();

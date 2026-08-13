@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://www.exdci-solutions.com/images/logo.png" />
 
 <link rel="icon" href="images/favicon.ico" />
-<link rel="stylesheet" href="css/styles.css?v=5fbbd3738f" />
+<link rel="stylesheet" href="css/styles.css?v=7ab1740226" />
 </head>
 <body id="top">
 
@@ -138,10 +138,31 @@
             <input type="text" id="phone" name="phone" />
           </div>
           <div>
+            <label>Areas of interest</label>
+            <details class="interest-select" id="interest-select" data-selected-label="selected" data-placeholder="Select one or more areas">
+              <summary>Select one or more areas</summary>
+              <div class="interest-panel">
+                <p class="interest-group-label">PRODUCTS</p>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="RAS · Machine Access Box" /> RAS · Machine Access Box</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="IPL · Industrial Router" /> IPL · Industrial Router</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="XSLAN / XELAN · Ethernet Extender" /> XSLAN / XELAN · Ethernet Extender</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="SIG · VPN Servers" /> SIG · VPN Servers</label>
+                <p class="interest-group-label">SOLUTIONS</p>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="Máquina Conectada (Connected Machine)" /> Máquina Conectada (Connected Machine)</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="BeSmartOverWire" /> BeSmartOverWire</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="ESLynk" /> ESLynk</label>
+                <p class="interest-group-label">SERVICES</p>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="EcoXpert Power Management" /> EcoXpert Power Management</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="Automation, Control &amp; Communications" /> Automation, Control &amp; Communications</label>
+                <label class="interest-option"><input type="checkbox" name="areas_interes" value="Energy Management Systems" /> Energy Management Systems</label>
+              </div>
+            </details>
+          </div>
+          <div>
             <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send message</button>
+          <button type="submit" class="btn btn-primary" disabled>Send message</button>
           <p class="form-note">When you submit this form your message reaches us directly by email. We never share your data with third parties.</p>
         </form>
       </div>
@@ -183,6 +204,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=5fbbd3738f"></script>
+<script src="js/main.js?v=7ab1740226"></script>
 </body>
 </html>
