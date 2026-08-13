@@ -4,8 +4,6 @@
 :root {
   --accent: #00aa7a;
   --accent-dark: #00805c;
-  --green: #2fa827;
-  --green-dark: #1f7a19;
   --blue: #0f63aa;
   --blue-light: #3298cd;
   --gray: #58595b;
@@ -258,7 +256,7 @@ a:hover { color: var(--blue-light); }
 /* ---------- Quote block ---------- */
 
 .quote-block {
-  border-left: 4px solid var(--green);
+  border-left: 4px solid var(--accent);
   padding: 4px 0 4px 20px;
   margin: 40px 0;
   font-style: italic;
@@ -321,12 +319,12 @@ section.alt { background: var(--bg-alt); }
 
 .card.c-gray { border-top-color: var(--gray); }
 .card.c-blue { border-top-color: var(--blue); }
-.card.c-green { border-top-color: var(--green); }
+.card.c-green { border-top-color: var(--accent); }
 
 .card h3 { margin: 0 0 12px; font-size: 18px; }
 .card.c-gray h3 { color: var(--gray); }
 .card.c-blue h3 { color: var(--blue); }
-.card.c-green h3 { color: var(--green-dark); }
+.card.c-green h3 { color: var(--accent-dark); }
 
 .card ul { margin: 0 0 16px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; }
 .card ul li { margin-bottom: 6px; }
@@ -471,7 +469,7 @@ ul.bullet-list li::marker { color: var(--accent); }
 
 .milestone-year {
   font-weight: 800;
-  color: var(--green-dark);
+  color: var(--accent-dark);
   font-size: 15px;
   min-width: 56px;
   flex-shrink: 0;
@@ -528,7 +526,7 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
   border-radius: 8px;
   margin-bottom: 14px;
 }
-.form-feedback-success { background: #eaf7e9; color: var(--green-dark); }
+.form-feedback-success { background: #eaf7e9; color: var(--accent-dark); }
 .form-feedback-error { background: #fbeaea; color: #c0392b; }
 
 .interest-select {
