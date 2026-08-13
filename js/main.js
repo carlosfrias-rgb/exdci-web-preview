@@ -58,3 +58,11 @@
 
   updateInterestState();
 })();
+
+(function () {
+  var params = new URLSearchParams(location.search);
+  var success = document.querySelector(".form-feedback-success");
+  var error = document.querySelector(".form-feedback-error");
+  if (params.get("enviado") === "1" && success) success.style.display = "block";
+  if (params.get("error") === "1" && error) error.style.display = "block";
+})();
