@@ -3,6 +3,7 @@
 
 :root {
   --accent: #00aa7a;
+  --accent-dark: #00805c;
   --green: #2fa827;
   --green-dark: #1f7a19;
   --blue: #0f63aa;
@@ -245,14 +246,14 @@ a:hover { color: var(--blue-light); }
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
-.btn-primary { background: var(--green); color: #fff; }
-.btn-primary:hover { background: var(--green-dark); color: #fff; transform: translateY(-1px); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-dark); color: #fff; transform: translateY(-1px); }
 
 .btn-outline { background: transparent; border-color: var(--border); color: var(--ink); }
 .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
 
 .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
-.btn:disabled:hover { background: var(--green); transform: none; }
+.btn:disabled:hover { background: var(--accent); transform: none; }
 
 /* ---------- Quote block ---------- */
 
