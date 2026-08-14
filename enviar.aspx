@@ -53,27 +53,33 @@
       body.AppendLine(message);
 
       string smtpUser = WebConfigurationManager.AppSettings["SmtpUser"];
-      string smtpPassword = WebConfigurationManager.AppSettings["SmtpPassword"];
       string smtpHost = WebConfigurationManager.AppSettings["SmtpHost"];
       int smtpPort = int.Parse(WebConfigurationManager.AppSettings["SmtpPort"]);
+      string formRecipient = WebConfigurationManager.AppSettings["FormRecipient"];
 
       var mail = new MailMessage();
       mail.From = new MailAddress(smtpUser, "Formulario exdci-solutions.com");
-      mail.To.Add(smtpUser);
+      mail.To.Add(formRecipient);
       mail.ReplyToList.Add(new MailAddress(email, name));
       mail.Subject = "Nuevo mensaje desde exdci-solutions.com";
       mail.Body = body.ToString();
 
+      // Rele SMTP local del propio servidor (igual que hacia CDONTS.NewMail en la web antigua):
+      // no requiere autenticacion, el servicio local ya tiene permiso para repartir el correo.
       var client = new SmtpClient(smtpHost, smtpPort);
-      client.EnableSsl = true;
-      client.Credentials = new System.Net.NetworkCredential(smtpUser, smtpPassword);
+      client.UseDefaultCredentials = true;
       client.Send(mail);
-
-      Response.Redirect(redirectBase + "?enviado=1");
     }
-    catch
+    catch (System.Threading.ThreadAbortException)
+    {
+      throw;
+    }
+    catch (Exception)
     {
       Response.Redirect(redirectBase + "?error=1");
+      return;
     }
+
+    Response.Redirect(redirectBase + "?enviado=1");
   }
 </script>
