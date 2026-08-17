@@ -74,7 +74,7 @@
           <a href="soluciones_fr.html#maquina-conectada">Máquina Conectada</a>
           <a href="soluciones_fr.html#besmartoverwire">BeSmartOverWire</a>
           <a href="soluciones_fr.html#eslynk">ESLynk</a>
-          <a href="soluciones_fr.html#linkbackup">eXDCi LinkBackup</a>
+          <a href="soluciones_fr.html#linkbackup">Pack eXDCi LinkBackup</a>
         </div>
       </div>
 
@@ -131,7 +131,7 @@
         <a class="card-link" href="#eslynk">Voir en détail &rarr;</a>
       </div>
       <div class="card c-green">
-        <h3>eXDCi LinkBackup</h3>
+        <h3>Pack eXDCi LinkBackup</h3>
         <p style="color:var(--ink-soft); font-size:14px;">Continuité temporaire des communications industrielles.</p>
         <a class="card-link" href="#linkbackup">Voir en détail &rarr;</a>
       </div>
@@ -291,52 +291,44 @@
   <div class="container">
     <div class="service-head">
       <span class="service-dot c-green"></span>
-      <h2>eXDCi LinkBackup</h2>
+      <h2>Pack eXDCi LinkBackup</h2>
     </div>
-    <p>eXDCi LinkBackup fournit une solution de continuité temporaire : lorsque la liaison principale tombe en panne, deux routeurs IPL-C-100-LW d&#39;ETIC Telecom sont déployés, un à chaque extrémité, établissant un tunnel OpenVPN de niveau 2 sur le réseau mobile 4G/LTE, maintenant la communication industrielle de façon transparente et sans modifier la configuration des équipements du réseau.</p>
+    <p>Dans une installation industrielle, une <strong>rupture d&#39;un câble de communication ou d&#39;une fibre optique</strong> peut laisser temporairement <strong>sans communication</strong> deux zones de l&#39;installation. La <strong>réparation</strong> de la liaison physique peut nécessiter des heures, voire des <strong>jours</strong>, affectant pendant ce temps la supervision, le diagnostic et l&#39;exploitation à distance des équipements. Le <strong>kit eXDCi LinkBackup</strong> fournit une solution de continuité temporaire : lorsque la liaison principale tombe en panne, deux routeurs IPL-C-100-LW d&#39;ETIC Telecom sont déployés, un à chaque extrémité, établissant un tunnel VPN sur le réseau mobile 4G/LTE, <strong>maintenant la communication industrielle de façon transparente</strong> et sans modifier la configuration des équipements du réseau.</p>
 
     <div class="service-sub">
 <h3>Concept clé</h3>      <div class="service-body full-image">
         <div>
-<p>Dans une installation industrielle, la rupture d&#39;un câble de communication ou d&#39;une fibre optique peut priver temporairement de communication deux zones de l&#39;installation. La réparation de la liaison physique peut nécessiter des heures, voire des jours, affectant pendant ce temps la supervision, le diagnostic et l&#39;exploitation à distance des équipements.</p><p>La communication reste opérationnelle pendant la réparation de la liaison physique. Une fois celle-ci réparée, le secours est déconnecté et la communication est rétablie via la liaison principale.</p><p>Disposer d&#39;un kit eXDCi LinkBackup sur site permet de rétablir rapidement les communications en cas de rupture de la liaison principale. Les équipements sont préconfigurés par eXDCi Solutions avec une configuration universelle, ce qui permet de déployer le kit directement à l&#39;une ou l&#39;autre extrémité de l&#39;installation, sans nécessiter de configuration spécifique sur le terrain.</p>        </div>
+<p>La communication reste opérationnelle pendant la réparation de la liaison physique. Une fois celle-ci réparée, le secours est déconnecté et la communication est rétablie via la liaison principale.</p><p>Disposer d&#39;un kit eXDCi LinkBackup sur site permet de rétablir rapidement les communications en cas de rupture de la liaison principale. Les équipements sont préconfigurés par eXDCi Solutions avec une configuration universelle, ce qui permet de déployer le kit directement aux deux extrémités concernées, sans nécessiter de configuration spécifique sur le terrain.</p>        </div>
 <div><img src="images/linkbackup-diagrama.png" alt="Concept clé" loading="lazy" /></div>      </div>
     </div>
     <div class="service-sub">
 <h3>Comment ça marche</h3>      <div class="service-body">
         <div>
-<p>En fonctionnement normal, la communication industrielle entre les deux réseaux locaux passe par la liaison principale entre commutateurs, via des extenseurs SHDSL (XSLAN-1400) ou une liaison en fibre optique.</p><p>En cas de rupture du câble ou de la fibre, la liaison défaillante est physiquement déconnectée et deux routeurs IPL-C-100-LW sont connectés, un à chaque extrémité, établissant un tunnel OpenVPN de niveau 2 (TAP) sur le réseau mobile 4G/LTE.</p><p>La communication entre les deux réseaux locaux se poursuit sur le même réseau Ethernet, sans qu&#39;il soit nécessaire de modifier la configuration des équipements ni les adresses IP.</p>        </div>
+<p>En fonctionnement normal, la communication industrielle entre les deux réseaux locaux passe par la liaison principale entre commutateurs, via des extenseurs SHDSL (XSLAN-1400) ou une liaison en fibre optique.</p><p>En cas de rupture du câble ou de la fibre, la liaison défaillante est physiquement déconnectée et les deux routeurs IPL-C-100-LW fournis avec le kit sont connectés, un à chaque extrémité, établissant un tunnel VPN sécurisé sur le réseau mobile 4G/LTE.</p><p>La communication entre les deux réseaux locaux se poursuit sur le même réseau Ethernet, sans qu&#39;il soit nécessaire de modifier la configuration des équipements ni les adresses IP.</p>        </div>
       </div>
     </div>
     <div class="service-sub">
 <h3>Caractéristiques de la solution</h3>      <div class="service-body">
         <div>
           <ul class="bullet-list">
-<li>Communication transparente en niveau 2 (même LAN/VLAN)</li><li>Aucun changement d&#39;IP sur les équipements</li><li>Compatible avec la plupart des protocoles industriels (Modbus TCP, Ethernet/IP, etc.)</li><li>Commutation manuelle : un seul chemin de communication actif à la fois (câble/fibre ou tunnel OpenVPN L2)</li><li>Solution rapide à déployer et simple à exploiter</li><li>Permet de maintenir la communication industrielle le temps nécessaire à la réparation de la liaison physique</li>          </ul>
+<li>Communication transparente en niveau 2 (même LAN/VLAN)</li><li>Aucun changement d&#39;IP sur les équipements</li><li>Commutation manuelle : un seul chemin de communication actif à la fois (câble/fibre ou tunnel VPN)</li><li>Solution préconfigurée par eXDCi Solutions, ce qui la rend rapide à déployer et simple à exploiter</li><li>Permet de maintenir la communication industrielle le temps nécessaire à la réparation de la liaison physique</li><li>Le kit peut inclure les cartes EticSIM PRO d&#39;Etic Telecom, notre option recommandée pour les clients qui n&#39;utilisent pas habituellement de cartes SIM pour leurs communications 4G/LTE</li>          </ul>
         </div>
       </div>
     </div>
     <div class="service-sub">
-<h3>Comment l&#39;utiliser ?</h3>      <div class="service-body">
+<h3>Pourquoi nous recommandons la connectivité professionnelle EticSIM PRO</h3>      <div class="service-body">
         <div>
-          <ul class="bullet-list">
-<li>1. Détection : la rupture du câble ou de la fibre entre les commutateurs est détectée</li><li>2. Isolement : la liaison principale défaillante (SHDSL ou fibre optique) est physiquement déconnectée</li><li>3. Déploiement du secours : les deux routeurs IPL-C-100-LW sont connectés aux réseaux locaux et au réseau mobile 4G/LTE, établissant le tunnel OpenVPN de niveau 2 (TAP) entre les deux routeurs</li><li>4. Continuité : les communications industrielles se poursuivent sans changement pour les équipements du réseau</li><li>5. Restauration : une fois la liaison physique réparée, le tunnel OpenVPN est déconnecté, les routeurs IPL-C-100-LW sont retirés et la liaison principale est reconnectée — les communications reprennent via SHDSL ou fibre optique</li>          </ul>
+<p>Notre recommandation est d&#39;utiliser la solution EticSIM PRO incluse dans les routeurs IPL-C-100-LW : elle offre une connectivité 4G multi-opérateur depuis n&#39;importe quel emplacement et des données professionnelles avec QoS garantie, pour assurer au mieux le fonctionnement du système.</p><p>ETIC Telecom propose EticSIM PRO avec Pro Data pour ses routeurs 4G, valable aussi bien pour les équipements neufs que déjà installés. C&#39;est une solution B2B avec QoS garantie, où le débit dépend uniquement de la qualité du signal, même dans des environnements à forte concurrence d&#39;utilisateurs. Caractéristiques :</p>          <ul class="bullet-list">
+<li>Conformité réglementaire européenne</li><li>Performance stable</li><li>Conçue pour des applications professionnelles critiques</li><li>Multi-opérateur dans toute l&#39;Europe. En Espagne, par exemple, elle fonctionne avec Vodafone, Movistar, Orange et Xfera</li>          </ul>
         </div>
       </div>
     </div>
     <div class="service-sub">
-<h3>Connectivité professionnelle avec EticSIM PRO</h3>      <div class="service-body">
-        <div>
-<p>Notre recommandation est d&#39;utiliser la solution EticSIM PRO incluse dans les routeurs IPL-C-100-LW : elle offre une connectivité 4G multi-opérateur depuis n&#39;importe quel emplacement et des données professionnelles avec QoS garantie, pour assurer au mieux le fonctionnement du système.</p><p>ETIC Telecom propose EticSIM PRO avec Pro Data pour ses routeurs 4G, valable aussi bien pour les équipements neufs que déjà installés. C&#39;est une solution B2B avec QoS garantie, où le débit dépend uniquement de la qualité du signal, même dans des environnements à forte concurrence d&#39;utilisateurs.</p>          <ul class="bullet-list">
-<li>Conformité réglementaire européenne</li><li>Performance stable</li><li>Conçue pour des applications professionnelles critiques</li>          </ul>
-<p class="form-note">En Espagne, eXDCi Solutions est le partenaire officiel d&#39;ETIC Telecom pour EticSIM PRO.</p>        </div>
-      </div>
-    </div>
-    <div class="service-sub">
-<h3>Prérequis</h3>      <div class="service-body">
+<h3>Composition du kit LinkBackup</h3>      <div class="service-body">
         <div>
           <ul class="bullet-list">
-<li>Fourniture de 2 équipements IPL-C-100-LW préconfigurés par eXDCi Solutions pour un fonctionnement universel</li><li>L&#39;une des cartes SIM doit disposer d&#39;une IP publique</li><li>Nous recommandons l&#39;utilisation de cartes EticSIM PRO fournies par eXDCi Solutions</li><li>Connectivité 4G/LTE aux deux extrémités</li><li>OpenVPN configuré en mode TAP (niveau 2)</li><li>Bande passante suffisante pour le trafic industriel</li>          </ul>
-<p class="form-note">Un seul chemin de communication doit être actif à la fois. La liaison physique (SHDSL ou fibre optique) et le tunnel OpenVPN L2 ne doivent jamais être actifs simultanément. Cette solution est conçue comme un secours temporaire, jusqu&#39;à la réparation de la liaison physique principale.</p>        </div>
+<li>2 routeurs 4G IPL-C-100-LW, alimentation 24 Vdc et montage sur rail DIN</li><li>2 antennes 4G magnétiques ANT320 avec câble de 3 mètres pour une pose facile</li><li>1 configuration des routeurs réalisée par eXDCi pour un fonctionnement universel, adaptée à chaque installation selon le sous-réseau utilisé</li><li>En option, les routeurs peuvent être fournis avec des cartes EticSIM PRO de 360 Go, valables 36 mois</li>          </ul>
+        </div>
       </div>
     </div>
 
