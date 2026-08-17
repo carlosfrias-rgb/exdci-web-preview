@@ -293,12 +293,12 @@
       <span class="service-dot c-green"></span>
       <h2>eXDCi LinkBackup</h2>
     </div>
-    <p>Solution de secours temporaire en cas de rupture de câble ou de fibre entre commutateurs : lorsque la liaison principale tombe en panne, deux routeurs IPL-C-100-LW d&#39;ETIC Telecom établissent automatiquement un tunnel OpenVPN de niveau 2 sur le réseau mobile 4G/LTE pour maintenir la communication industrielle opérationnelle de façon transparente, jusqu&#39;à la réparation de la liaison physique.</p>
+    <p>eXDCi LinkBackup fournit une solution de continuité temporaire : lorsque la liaison principale tombe en panne, deux routeurs IPL-C-100-LW d&#39;ETIC Telecom sont déployés, un à chaque extrémité, établissant un tunnel OpenVPN de niveau 2 sur le réseau mobile 4G/LTE, maintenant la communication industrielle de façon transparente et sans modifier la configuration des équipements du réseau.</p>
 
     <div class="service-sub">
 <h3>Concept clé</h3>      <div class="service-body full-image">
         <div>
-<p>Lorsque la liaison principale (SHDSL ou fibre optique) entre les deux commutateurs se rompt, deux routeurs IPL-C-100-LW sont déployés et un tunnel OpenVPN de niveau 2 est établi pour maintenir le réseau industriel opérationnel de façon transparente, sans modification de configuration des équipements.</p>        </div>
+<p>Dans une installation industrielle, la rupture d&#39;un câble de communication ou d&#39;une fibre optique peut priver temporairement de communication deux zones de l&#39;installation. La réparation de la liaison physique peut nécessiter des heures, voire des jours, affectant pendant ce temps la supervision, le diagnostic et l&#39;exploitation à distance des équipements.</p><p>La communication reste opérationnelle pendant la réparation de la liaison physique. Une fois celle-ci réparée, le secours est déconnecté et la communication est rétablie via la liaison principale.</p><p>Disposer d&#39;un kit eXDCi LinkBackup sur site permet de rétablir rapidement les communications en cas de rupture de la liaison principale. Les équipements sont préconfigurés par eXDCi Solutions avec une configuration universelle, ce qui permet de déployer le kit directement à l&#39;une ou l&#39;autre extrémité de l&#39;installation, sans nécessiter de configuration spécifique sur le terrain.</p>        </div>
 <div><img src="images/linkbackup-diagrama.png" alt="Concept clé" loading="lazy" /></div>      </div>
     </div>
     <div class="service-sub">
@@ -322,30 +322,6 @@
 <li>1. Détection : la rupture du câble ou de la fibre entre les commutateurs est détectée</li><li>2. Isolement : la liaison principale défaillante (SHDSL ou fibre optique) est physiquement déconnectée</li><li>3. Déploiement du secours : les deux routeurs IPL-C-100-LW sont connectés aux réseaux locaux et au réseau mobile 4G/LTE, établissant le tunnel OpenVPN de niveau 2 (TAP) entre les deux routeurs</li><li>4. Continuité : les communications industrielles se poursuivent sans changement pour les équipements du réseau</li><li>5. Restauration : une fois la liaison physique réparée, le tunnel OpenVPN est déconnecté, les routeurs IPL-C-100-LW sont retirés et la liaison principale est reconnectée — les communications reprennent via SHDSL ou fibre optique</li>          </ul>
         </div>
       </div>
-    </div>
-    <div class="service-sub">
-<h3>Équipement : XSLAN-1400</h3>      <div class="service-body">
-        <div>
-          <ul class="bullet-list">
-<li>Extenseur SHDSL industriel</li><li>Jusqu&#39;à 15,3 Mbps symétriques</li><li>Jusqu&#39;à 2 fils (paire de cuivre)</li><li>Portée jusqu&#39;à 20 km</li><li>Ports Ethernet 10/100</li>          </ul>
-        </div>
-<div><img src="images/linkbackup-xslan-1400.png" alt="Équipement : XSLAN-1400" loading="lazy" /></div>      </div>
-    </div>
-    <div class="service-sub">
-<h3>Équipement : commutateur fibre optique</h3>      <div class="service-body">
-        <div>
-          <ul class="bullet-list">
-<li>Commutateur Ethernet industriel managé</li><li>5 ports RJ45 10/100TX</li><li>1 port SFP 100FX pour fibre optique</li><li>Prise en charge VLAN, QoS, IGMP Snooping, etc.</li><li>Montage sur rail DIN</li>          </ul>
-        </div>
-<div><img src="images/linkbackup-switch-fo.png" alt="Équipement : commutateur fibre optique" loading="lazy" /></div>      </div>
-    </div>
-    <div class="service-sub">
-<h3>Équipement : IPL-C-100-LW</h3>      <div class="service-body">
-        <div>
-          <ul class="bullet-list">
-<li>Routeur industriel 4G/LTE</li><li>OpenVPN de niveau 2 (TAP)</li><li>Ports Ethernet 10/100</li><li>Montage sur rail DIN</li><li>Préconfiguré par eXDCi Solutions pour un fonctionnement universel</li>          </ul>
-        </div>
-<div><img src="images/linkbackup-router-ipl.png" alt="Équipement : IPL-C-100-LW" loading="lazy" /></div>      </div>
     </div>
     <div class="service-sub">
 <h3>Connectivité professionnelle avec EticSIM PRO</h3>      <div class="service-body">

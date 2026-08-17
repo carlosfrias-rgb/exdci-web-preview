@@ -293,12 +293,12 @@
       <span class="service-dot c-green"></span>
       <h2>eXDCi LinkBackup</h2>
     </div>
-    <p>Backup temporal ante rotura de cable o fibra entre switches: cuando falla el enlace principal, dos routers IPL-C-100-LW de ETIC Telecom establecen automáticamente un túnel OpenVPN en capa 2 sobre red móvil 4G/LTE para mantener la comunicación industrial operativa de forma transparente, hasta reparar el enlace físico.</p>
+    <p>eXDCi LinkBackup proporciona una solución de continuidad temporal: cuando falla el enlace principal, se despliegan dos routers IPL-C-100-LW de ETIC Telecom, uno en cada extremo, que establecen un túnel OpenVPN en capa 2 sobre red móvil 4G/LTE, manteniendo la comunicación industrial de forma transparente y sin modificar la configuración de los equipos de la red.</p>
 
     <div class="service-sub">
 <h3>Concepto clave</h3>      <div class="service-body full-image">
         <div>
-<p>Cuando se rompe el enlace principal (SHDSL o fibra óptica) entre los dos switches, se despliegan dos routers IPL-C-100-LW y se establece un túnel OpenVPN en capa 2 para mantener la red industrial operativa de forma transparente, sin cambios de configuración en los equipos.</p>        </div>
+<p>En una instalación industrial, la rotura de un cable de comunicaciones o de una fibra óptica puede dejar temporalmente sin comunicación dos zonas de la instalación. La reparación del enlace físico puede requerir horas o incluso días, afectando durante ese tiempo a la supervisión, el diagnóstico y la operación remota de los equipos.</p><p>La comunicación se mantiene operativa mientras se realiza la reparación del enlace físico. Una vez reparado, se desconecta el backup y se restablece la comunicación por el enlace principal.</p><p>Disponer de un kit eXDCi LinkBackup en sus instalaciones permite recuperar rápidamente las comunicaciones ante una rotura del enlace principal. Los equipos son preconfigurados por eXDCi Solutions con una configuración universal, por lo que el kit puede desplegarse directamente en cualquiera de los extremos de la instalación sin necesidad de realizar una configuración específica en campo.</p>        </div>
 <div><img src="images/linkbackup-diagrama.png" alt="Concepto clave" loading="lazy" /></div>      </div>
     </div>
     <div class="service-sub">
@@ -322,30 +322,6 @@
 <li>1. Detección: se detecta la rotura del cable o la fibra entre los switches</li><li>2. Aislamiento: se desconecta físicamente el enlace principal averiado (SHDSL o fibra óptica)</li><li>3. Despliegue del backup: se conectan los dos IPL-C-100-LW a las redes locales y a la red móvil 4G/LTE, estableciendo el túnel OpenVPN en capa 2 (TAP) entre ambos routers</li><li>4. Continuidad: la comunicación industrial continúa sin cambios para los equipos de la red</li><li>5. Restauración: una vez reparado el enlace físico, se desconecta el túnel OpenVPN, se retiran los IPL-C-100-LW y se reconecta el enlace principal — la comunicación vuelve a funcionar por SHDSL o fibra óptica</li>          </ul>
         </div>
       </div>
-    </div>
-    <div class="service-sub">
-<h3>Equipo: XSLAN-1400</h3>      <div class="service-body">
-        <div>
-          <ul class="bullet-list">
-<li>Extensor SHDSL industrial</li><li>Hasta 15,3 Mbps simétricos</li><li>Hasta 2 hilos (par de cobre)</li><li>Rango de hasta 20 km</li><li>Puertos Ethernet 10/100</li>          </ul>
-        </div>
-<div><img src="images/linkbackup-xslan-1400.png" alt="Equipo: XSLAN-1400" loading="lazy" /></div>      </div>
-    </div>
-    <div class="service-sub">
-<h3>Equipo: switch de fibra óptica</h3>      <div class="service-body">
-        <div>
-          <ul class="bullet-list">
-<li>Switch Ethernet gestionado industrial</li><li>5 puertos RJ45 10/100TX</li><li>1 puerto SFP 100FX para fibra óptica</li><li>Soporte de VLAN, QoS, IGMP Snooping, etc.</li><li>Montaje en carril DIN</li>          </ul>
-        </div>
-<div><img src="images/linkbackup-switch-fo.png" alt="Equipo: switch de fibra óptica" loading="lazy" /></div>      </div>
-    </div>
-    <div class="service-sub">
-<h3>Equipo: IPL-C-100-LW</h3>      <div class="service-body">
-        <div>
-          <ul class="bullet-list">
-<li>Router industrial 4G/LTE</li><li>OpenVPN en capa 2 (TAP)</li><li>Puertos Ethernet 10/100</li><li>Montaje en carril DIN</li><li>Preconfigurado por eXDCi Solutions para funcionamiento universal</li>          </ul>
-        </div>
-<div><img src="images/linkbackup-router-ipl.png" alt="Equipo: IPL-C-100-LW" loading="lazy" /></div>      </div>
     </div>
     <div class="service-sub">
 <h3>Conectividad profesional con EticSIM PRO</h3>      <div class="service-body">
